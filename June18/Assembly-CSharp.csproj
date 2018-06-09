@@ -55,6 +55,7 @@
      <Compile Include="Assets\LevelBehaviour.cs" />
      <Compile Include="Assets\PeopleBehaviour.cs" />
      <Compile Include="Assets\PlayerController.cs" />
+     <Compile Include="Assets\WaterBehaviour.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
