@@ -6,13 +6,17 @@ public class PlayerController : MonoBehaviour {
 
 	public GameObject positon;
 
+	private string characterName;
+
 	private HexagonBehaviour homeHex;
 	private HexagonBehaviour destHex;
 
 	// Use this for initialization
 	void Start () {
-		
+
+		characterName = "Amor";
  		homeHex = positon.gameObject.GetComponent<HexagonBehaviour>();
+		homeHex.inhabitant = characterName;
 	}
 	
 	// Update is called once per frame
@@ -24,12 +28,18 @@ public class PlayerController : MonoBehaviour {
 
 			destHex = homeHex.aboveLeft.GetComponent<HexagonBehaviour>();
 
-			if (destHex.inhabitant == null) {
+			if ((destHex.inhabitant == null) && (destHex.gameObject.name != "Deadzone")) {
 
 				//Set new Home
 				this.transform.position = homeHex.aboveLeft.transform.position;
+
+				homeHex.inhabitant = null;
 				homeHex = destHex;
+				homeHex.inhabitant = this.characterName;
 				positon = destHex.gameObject;
+
+
+				this.transform.eulerAngles = new Vector3(0, 120, 0);
 
 			}
 
@@ -39,12 +49,17 @@ public class PlayerController : MonoBehaviour {
 
 			destHex = homeHex.aboveRight.GetComponent<HexagonBehaviour>();
 
-			if (destHex.inhabitant == null) {
+			if ((destHex.inhabitant == null) && (destHex.gameObject.name != "Deadzone")) {
 
 				//Set new Home
 				this.transform.position = homeHex.aboveRight.transform.position;
+
+				homeHex.inhabitant = null;
 				homeHex = destHex;
+				homeHex.inhabitant = this.characterName;
 				positon = destHex.gameObject;
+
+				this.transform.eulerAngles = new Vector3(0, -120, 0);
 
 			}
 		}
@@ -53,12 +68,17 @@ public class PlayerController : MonoBehaviour {
 
 			destHex = homeHex.left.GetComponent<HexagonBehaviour>();
 
-			if (destHex.inhabitant == null) {
+			if ((destHex.inhabitant == null) && (destHex.gameObject.name != "Deadzone")) {
 
 				//Set new Home
 				this.transform.position = homeHex.left.transform.position;
+
+				homeHex.inhabitant = null;
 				homeHex = destHex;
+				homeHex.inhabitant = this.characterName;
 				positon = destHex.gameObject;
+
+				this.transform.eulerAngles = new Vector3(0, 90, 0);
 
 			}
 		}
@@ -67,12 +87,17 @@ public class PlayerController : MonoBehaviour {
 
 			destHex = homeHex.right.GetComponent<HexagonBehaviour>();
 
-			if (destHex.inhabitant == null) {
+			if ((destHex.inhabitant == null) && (destHex.gameObject.name != "Deadzone")) {
 
 				//Set new Home
 				this.transform.position = homeHex.right.transform.position;
+
+				homeHex.inhabitant = null;
 				homeHex = destHex;
+				homeHex.inhabitant = this.characterName;
 				positon = destHex.gameObject;
+
+				this.transform.eulerAngles = new Vector3(0, -90, 0);
 
 			}
 		}
@@ -81,12 +106,17 @@ public class PlayerController : MonoBehaviour {
 
 			destHex = homeHex.belowLeft.GetComponent<HexagonBehaviour>();
 
-			if (destHex.inhabitant == null) {
+			if ((destHex.inhabitant == null) && (destHex.gameObject.name != "Deadzone")) {
 
 				//Set new Home
 				this.transform.position = homeHex.belowLeft.transform.position;
+
+				homeHex.inhabitant = null;
 				homeHex = destHex;
+				homeHex.inhabitant = this.characterName;
 				positon = destHex.gameObject;
+
+				this.transform.eulerAngles = new Vector3(0, 30, 0);
 
 			}
 		}
@@ -95,12 +125,17 @@ public class PlayerController : MonoBehaviour {
 
 			destHex = homeHex.belowRight.GetComponent<HexagonBehaviour>();
 
-			if (destHex.inhabitant == null) {
+			if ((destHex.inhabitant == null) && (destHex.gameObject.name != "Deadzone")) {
 
 				//Set new Home
 				this.transform.position = homeHex.belowRight.transform.position;
+
+				homeHex.inhabitant = null;
 				homeHex = destHex;
+				homeHex.inhabitant = this.characterName;
 				positon = destHex.gameObject;
+
+				this.transform.eulerAngles = new Vector3(0, -30, 0);
 
 			}
 		}
