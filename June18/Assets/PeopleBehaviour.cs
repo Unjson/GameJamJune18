@@ -5,7 +5,7 @@ using UnityEngine;
 public class PeopleBehaviour : MonoBehaviour {
 
 
-	public string CharacterName;
+	public string characterName;
 	public bool isMoving;
 	public string direction;
 
@@ -19,7 +19,11 @@ public class PeopleBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		isSlowed = false;
+
 		homeHex = positon.gameObject.GetComponent<HexagonBehaviour>();
+		homeHex.inhabitant = this.gameObject;
+		homeHex.inhabitantType = 2;
 
 	}
 	
@@ -36,17 +40,15 @@ public class PeopleBehaviour : MonoBehaviour {
 
 			if (direction == "UpLeft") {
 
-				destHex = homeHex.aboveLeft.GetComponent<HexagonBehaviour> ();
 
-				if (destHex.inhabitant == null) {
+				destHex = homeHex.aboveLeft.GetComponent<HexagonBehaviour> ();
+		
+
+				if (destHex.inhabitantType == 0 || destHex.inhabitantType == 2) {
 
 					//Set new Home
 					this.transform.position = homeHex.aboveLeft.transform.position;
-
-					homeHex.inhabitant = null;
-					homeHex = destHex;
-					homeHex.inhabitant = this.CharacterName;
-					positon = destHex.gameObject;
+				
 
 				}
 
@@ -56,15 +58,10 @@ public class PeopleBehaviour : MonoBehaviour {
 
 				destHex = homeHex.aboveRight.GetComponent<HexagonBehaviour> ();
 
-				if (destHex.inhabitant == null) {
+				if (destHex.inhabitantType == 0 || destHex.inhabitantType == 2) {
 
 					//Set new Home
 					this.transform.position = homeHex.aboveRight.transform.position;
-
-					homeHex.inhabitant = null;
-					homeHex = destHex;
-					homeHex.inhabitant = this.CharacterName;
-					positon = destHex.gameObject;
 
 				}
 			}
@@ -73,15 +70,10 @@ public class PeopleBehaviour : MonoBehaviour {
 
 				destHex = homeHex.left.GetComponent<HexagonBehaviour> ();
 
-				if (destHex.inhabitant == null) {
+				if (destHex.inhabitantType == 0 || destHex.inhabitantType == 2) {
 
 					//Set new Home
 					this.transform.position = homeHex.left.transform.position;
-
-					homeHex.inhabitant = null;
-					homeHex = destHex;
-					homeHex.inhabitant = this.CharacterName;
-					positon = destHex.gameObject;
 
 				}
 			}
@@ -90,15 +82,10 @@ public class PeopleBehaviour : MonoBehaviour {
 
 				destHex = homeHex.right.GetComponent<HexagonBehaviour> ();
 
-				if (destHex.inhabitant == null) {
+				if (destHex.inhabitantType == 0 || destHex.inhabitantType == 2) {
 
 					//Set new Home
 					this.transform.position = homeHex.right.transform.position;
-
-					homeHex.inhabitant = null;
-					homeHex = destHex;
-					homeHex.inhabitant = this.CharacterName;
-					positon = destHex.gameObject;
 
 				}
 			}
@@ -107,15 +94,10 @@ public class PeopleBehaviour : MonoBehaviour {
 
 				destHex = homeHex.belowLeft.GetComponent<HexagonBehaviour> ();
 
-				if (destHex.inhabitant == null) {
+				if (destHex.inhabitantType == 0 || destHex.inhabitantType == 2) {
 
 					//Set new Home
 					this.transform.position = homeHex.belowLeft.transform.position;
-
-					homeHex.inhabitant = null;
-					homeHex = destHex;
-					homeHex.inhabitant = this.CharacterName;
-					positon = destHex.gameObject;
 
 				}
 			}
@@ -124,18 +106,32 @@ public class PeopleBehaviour : MonoBehaviour {
 
 				destHex = homeHex.belowRight.GetComponent<HexagonBehaviour> ();
 
-				if (destHex.inhabitant == null) {
+				if (destHex.inhabitantType == 0 || destHex.inhabitantType == 2) {
 
 					//Set new Home
 					this.transform.position = homeHex.belowRight.transform.position;
 
-					homeHex.inhabitant = null;
-					homeHex = destHex;
-					homeHex.inhabitant = this.CharacterName;
-					positon = destHex.gameObject;
-
 				}
 			}
+
+			homeHex.inhabitant = null;
+			homeHex.inhabitantType = 0;
+
+			if (destHex.inhabitantType == 2) 
+			{
+
+				PeopleBehaviour significantOther = destHex.inhabitant.GetComponent<PeopleBehaviour> ();
+
+				significantOther.MutuallyAssuredDestruction ();
+				this.MutuallyAssuredDestruction ();
+
+			}
+
+
+			homeHex = destHex;
+			homeHex.inhabitant = this.gameObject;
+			homeHex.inhabitantType = 2;
+			positon = destHex.gameObject;
 		} 
 
 
@@ -145,6 +141,13 @@ public class PeopleBehaviour : MonoBehaviour {
 
 		}
 
+
+	}
+		
+
+	void MutuallyAssuredDestruction (){
+
+		Destroy (this.gameObject);
 
 	}
 
