@@ -51,8 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ButtonStart.cs" />
+     <Compile Include="Assets\CanvasBehaviour.cs" />
      <Compile Include="Assets\HexagonBehaviour.cs" />
      <Compile Include="Assets\LevelBehaviour.cs" />
+     <Compile Include="Assets\LevelLogic.cs" />
      <Compile Include="Assets\PeopleBehaviour.cs" />
      <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\WaterBehaviour.cs" />

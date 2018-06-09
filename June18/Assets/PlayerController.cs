@@ -164,7 +164,7 @@ public class PlayerController : MonoBehaviour {
 		if (isShooting == true)
 		{
 
-			if (Input.anyKeyDown) {
+			if (Input.anyKeyDown && LevelLogic.arrowCount > 0) {
 
 				string dir = null;
 				destHex = homeHex.GetComponent<HexagonBehaviour> ();
@@ -172,41 +172,47 @@ public class PlayerController : MonoBehaviour {
 				if (Input.GetButtonDown ("UpLeft")) {
 					
 					dir = "UpLeft";
-
+					LevelLogic.arrowCount--;
 				}
 
 				if (Input.GetButtonDown ("UpRight")) {
 
 					dir = "UpRight";
+					LevelLogic.arrowCount--;
 
 				}
 
 				if (Input.GetButtonDown ("Left")) {
 
 					dir = "Left";
+					LevelLogic.arrowCount--;
 
 				}
 
 				if (Input.GetButtonDown ("Right")) {
 
 					dir = "Right";
+					LevelLogic.arrowCount--;
 
 				}
 
 				if (Input.GetButtonDown ("DownLeft")) {
 
 					dir = "DownLeft";
+					LevelLogic.arrowCount--;
 
 				}
 
 				if (Input.GetButtonDown ("DownRight")) {
 
 					dir = "DownRight";
+					LevelLogic.arrowCount--;
 
 				}
 					
 
 				destHex.SendMessage ("ShootArrow", dir);
+				SendMessageUpwards ("UpdateStuff");
 
 				isShooting = false;
 

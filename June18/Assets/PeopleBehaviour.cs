@@ -148,6 +148,8 @@ public class PeopleBehaviour : MonoBehaviour {
 	void MutuallyAssuredDestruction (){
 
 		Destroy (this.gameObject);
+		LevelLogic.peepsLeft--;
+		SendMessageUpwards ("UpdateStuff");
 
 	}
 
