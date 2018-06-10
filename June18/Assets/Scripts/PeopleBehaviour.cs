@@ -117,7 +117,7 @@ public class PeopleBehaviour : MonoBehaviour {
 			homeHex.inhabitant = null;
 			homeHex.inhabitantType = 0;
 
-			if (destHex.inhabitantType == 2) 
+			/*if (destHex.inhabitantType == 2) 
 			{
 
 				PeopleBehaviour significantOther = destHex.inhabitant.GetComponent<PeopleBehaviour> ();
@@ -125,10 +125,17 @@ public class PeopleBehaviour : MonoBehaviour {
 				significantOther.MutuallyAssuredDestruction ();
 				this.MutuallyAssuredDestruction ();
 
-			}
+			}*/
 
 
 			homeHex = destHex;
+			if (homeHex.gameObject.name == "Deadzone")
+			{
+				Debug.Log("Omae Wa Shindeiru");
+				Destroy(this.gameObject);
+
+			}
+
 			homeHex.inhabitant = this.gameObject;
 			homeHex.inhabitantType = 2;
 			positon = destHex.gameObject;
@@ -145,7 +152,7 @@ public class PeopleBehaviour : MonoBehaviour {
 	}
 		
 
-	void MutuallyAssuredDestruction (){
+	public void MutuallyAssuredDestruction (){
 
 		Destroy (this.gameObject);
 		LevelLogic.peepsLeft--;

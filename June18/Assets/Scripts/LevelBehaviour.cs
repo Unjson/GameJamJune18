@@ -8,6 +8,8 @@ public class LevelBehaviour : MonoBehaviour {
 	public int howManyArrows;
 	public int howManyPeeps;
 
+	public GameObject[] Peeps;
+
 
 	// Use this for initialization
 	void Start () {
@@ -31,7 +33,8 @@ public class LevelBehaviour : MonoBehaviour {
 
 		BroadcastMessage ("moveNPCs");
 
-		BroadcastMessage ("UpdateCanvas");
+		CheckPositions ();
+		UpdateStuff ();
 
 	}
 
@@ -47,6 +50,35 @@ public class LevelBehaviour : MonoBehaviour {
 			SceneManager.LoadScene (LevelLogic.currentLevel);
 
 		}
+
+	}
+
+
+	void CheckPositions ()
+	{
+
+		for(int i = 0 ; i < Peeps.Length; i++)
+		{
+
+			Vector3 peepPosition = Peeps [i].transform.position;
+
+			for (int j = i + 1; j < Peeps.Length; j++) 
+			{
+
+				Debug.Log ("Hi");
+				if (peepPosition == Peeps [j].transform.position)
+				{
+
+					Peeps [i].GetComponent<PeopleBehaviour> ().MutuallyAssuredDestruction ();
+					Peeps [j].GetComponent<PeopleBehaviour> ().MutuallyAssuredDestruction ();
+
+				}
+
+
+			}
+
+		}
+
 
 	}
 		

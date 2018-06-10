@@ -2369,6 +2369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   howManyArrows: 1
   howManyPeeps: 2
+  Peeps:
+  - {fileID: 1242628301}
+  - {fileID: 1792664408}
 --- !u!82 &957762551
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3304,6 +3307,11 @@ Prefab:
     - {fileID: 54270244645893326, guid: 8006b77b75e1c5f44897d85e2f2125b1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 8006b77b75e1c5f44897d85e2f2125b1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1242628301 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1599536015154346, guid: 8006b77b75e1c5f44897d85e2f2125b1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1242628300}
 --- !u!1 &1275552757
 GameObject:
   m_ObjectHideFlags: 0
@@ -4874,6 +4882,11 @@ Prefab:
     - {fileID: 65608531302060974, guid: 8006b77b75e1c5f44897d85e2f2125b1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 8006b77b75e1c5f44897d85e2f2125b1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1792664408 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1599536015154346, guid: 8006b77b75e1c5f44897d85e2f2125b1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1792664407}
 --- !u!1 &1835318624
 GameObject:
   m_ObjectHideFlags: 0

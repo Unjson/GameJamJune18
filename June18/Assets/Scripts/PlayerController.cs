@@ -11,12 +11,17 @@ public class PlayerController : MonoBehaviour {
 	private HexagonBehaviour homeHex;
 	private HexagonBehaviour destHex;
 
+	private AudioSource arrowShoot;
+
 	private bool isShooting;
 
 	private ParticleSystem shootingEffect;
 
 	// Use this for initialization
 	void Start () {
+
+		arrowShoot = GetComponent<AudioSource>();
+		arrowShoot.Stop ();
 
 		isShooting = false;
 		//characterName = "Amor";
@@ -188,6 +193,7 @@ public class PlayerController : MonoBehaviour {
 					dir = "UpLeft";
 					LevelLogic.arrowCount--;
 					isShooting = false;
+					arrowShoot.Play();
 				}
 
 				if (Input.GetButtonDown ("UpRight")) {
@@ -195,6 +201,8 @@ public class PlayerController : MonoBehaviour {
 					dir = "UpRight";
 					LevelLogic.arrowCount--;
 					isShooting = false;
+					arrowShoot.Play ();
+
 
 				}
 
@@ -203,6 +211,7 @@ public class PlayerController : MonoBehaviour {
 					dir = "Left";
 					LevelLogic.arrowCount--;
 					isShooting = false;
+					arrowShoot.Play ();
 
 				}
 
@@ -211,6 +220,7 @@ public class PlayerController : MonoBehaviour {
 					dir = "Right";
 					LevelLogic.arrowCount--;
 					isShooting = false;
+					arrowShoot.Play ();
 
 				}
 
@@ -219,6 +229,7 @@ public class PlayerController : MonoBehaviour {
 					dir = "DownLeft";
 					LevelLogic.arrowCount--;
 					isShooting = false;
+					arrowShoot.Play ();
 
 				}
 
@@ -227,6 +238,8 @@ public class PlayerController : MonoBehaviour {
 					dir = "DownRight";
 					LevelLogic.arrowCount--;
 					isShooting = false;
+					arrowShoot.Play ();
+
 				}
 					
 
