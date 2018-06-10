@@ -1,0 +1,330 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
+    Vendor:   NVIDIA
+    VRAM:     2010 MB
+    Driver:   24.21.13.9811
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\Users\retsc\Documents\GameJamJune18\game_alphav02_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.196 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.878113 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at CanvasBehaviour.UpdateCanvas () [0x00000] in <filename unknown>:0 
+UnityEngine.Component:BroadcastMessage(String, Object, SendMessageOptions)
+UnityEngine.Component:BroadcastMessage(String)
+LevelBehaviour:Start()
+ 
+(Filename:  Line: -1)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 354c -> priority: 1 
+  Thread -> id: 2914 -> priority: 1 
+  Thread -> id: 39c0 -> priority: 1 
+  Thread -> id: 11cc -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.644497 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 645.
+Total: 1.481768 ms (FindLiveObjects: 0.031171 ms CreateObjectMapping: 0.019006 ms MarkObjects: 0.210215 ms  DeleteObjects: 1.220615 ms)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to call function ShootArrow of class HexagonBehaviour
+Calling function ShootArrow with no parameters but the function requires 1.
+ 
+(Filename:  Line: 792)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.435255 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 650.
+Total: 0.275598 ms (FindLiveObjects: 0.037633 ms CreateObjectMapping: 0.019386 ms MarkObjects: 0.204893 ms  DeleteObjects: 0.012924 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.794103 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 634.
+Total: 0.273317 ms (FindLiveObjects: 0.040294 ms CreateObjectMapping: 0.017866 ms MarkObjects: 0.206413 ms  DeleteObjects: 0.007982 ms)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to call function ShootArrow of class HexagonBehaviour
+Calling function ShootArrow with no parameters but the function requires 1.
+ 
+(Filename:  Line: 792)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to call function ShootArrow of class HexagonBehaviour
+Calling function ShootArrow with no parameters but the function requires 1.
+ 
+(Filename:  Line: 792)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Omae Wa Shindeiru
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.390779 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 634.
+Total: 0.243286 ms (FindLiveObjects: 0.032691 ms CreateObjectMapping: 0.014065 ms MarkObjects: 0.185506 ms  DeleteObjects: 0.010263 ms)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to call function ShootArrow of class HexagonBehaviour
+Calling function ShootArrow with no parameters but the function requires 1.
+ 
+(Filename:  Line: 792)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to call function ShootArrow of class HexagonBehaviour
+Calling function ShootArrow with no parameters but the function requires 1.
+ 
+(Filename:  Line: 792)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.387358 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 634.
+Total: 0.263814 ms (FindLiveObjects: 0.028130 ms CreateObjectMapping: 0.016345 ms MarkObjects: 0.207554 ms  DeleteObjects: 0.011023 ms)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to call function ShootArrow of class HexagonBehaviour
+Calling function ShootArrow with no parameters but the function requires 1.
+ 
+(Filename:  Line: 792)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Failed to call function ShootArrow of class HexagonBehaviour
+Calling function ShootArrow with no parameters but the function requires 1.
+ 
+(Filename:  Line: 792)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Hi
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Scene with build index: 4 couldn't be loaded because it has not been added to the build settings.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 136)
+
+Scene with build index: 5 couldn't be loaded because it has not been added to the build settings.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 136)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LevelBehaviour.CheckPositions () [0x00000] in <filename unknown>:0 
+  at LevelBehaviour.PlayerMoved () [0x00000] in <filename unknown>:0 
+UnityEngine.Component:SendMessageUpwards(String, Object, SendMessageOptions)
+UnityEngine.Component:SendMessageUpwards(String)
+PlayerController:Update()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LevelBehaviour.CheckPositions () [0x00000] in <filename unknown>:0 
+  at LevelBehaviour.PlayerMoved () [0x00000] in <filename unknown>:0 
+UnityEngine.Component:SendMessageUpwards(String, Object, SendMessageOptions)
+UnityEngine.Component:SendMessageUpwards(String)
+PlayerController:Update()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LevelBehaviour.CheckPositions () [0x00000] in <filename unknown>:0 
+  at LevelBehaviour.PlayerMoved () [0x00000] in <filename unknown>:0 
+UnityEngine.Component:SendMessageUpwards(String, Object, SendMessageOptions)
+UnityEngine.Component:SendMessageUpwards(String)
+PlayerController:Update()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LevelBehaviour.CheckPositions () [0x00000] in <filename unknown>:0 
+  at LevelBehaviour.PlayerMoved () [0x00000] in <filename unknown>:0 
+UnityEngine.Component:SendMessageUpwards(String, Object, SendMessageOptions)
+UnityEngine.Component:SendMessageUpwards(String)
+PlayerController:Update()
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LevelBehaviour.CheckPositions () [0x00000] in <filename unknown>:0 
+  at LevelBehaviour.PlayerMoved () [0x00000] in <filename unknown>:0 
+UnityEngine.Component:SendMessageUpwards(String, Object, SendMessageOptions)
+UnityEngine.Component:SendMessageUpwards(String)
+PlayerController:Update()
+ 
+(Filename:  Line: -1)
+
