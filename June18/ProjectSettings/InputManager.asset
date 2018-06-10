@@ -9,8 +9,8 @@ InputManager:
     m_Name: UpLeft
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: u
-    positiveButton: 
+    negativeButton: 
+    positiveButton: u
     altNegativeButton: 
     altPositiveButton: 
     gravity: 10

@@ -28,4 +28,9 @@ public class ButtonStart : MonoBehaviour {
 		SceneManager.LoadScene (LevelLogic.currentLevel);
 
 	}
+
+	public void quitGame()
+	{
+		Application.Quit ();
+	}
 }

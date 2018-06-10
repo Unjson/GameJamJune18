@@ -257,7 +257,6 @@ public class PlayerController : MonoBehaviour {
 
 	void updateParticles()
 	{
-		Debug.Log (isShooting);
 
 		if (isShooting) {
 			shootingEffect.Play ();

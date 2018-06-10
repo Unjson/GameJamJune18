@@ -19,6 +19,7 @@ public class HexagonBehaviour : MonoBehaviour {
 			 * 0 is uninhabited
 			 * 1 is player Character
 			 * 2 is NPC
+			 * 3 is Slowed NPC
 			 * 
 			*/
 
@@ -123,8 +124,7 @@ public class HexagonBehaviour : MonoBehaviour {
 			}
 
 		}
-
-		//TODO ArrowHit()
+			
 			
 
 

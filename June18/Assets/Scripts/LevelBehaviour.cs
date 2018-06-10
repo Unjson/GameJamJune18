@@ -32,6 +32,7 @@ public class LevelBehaviour : MonoBehaviour {
 	void PlayerMoved(){
 
 		BroadcastMessage ("moveNPCs");
+		BroadcastMessage ("slowNPCs", SendMessageOptions.DontRequireReceiver);
 
 		CheckPositions ();
 		UpdateStuff ();
@@ -44,8 +45,9 @@ public class LevelBehaviour : MonoBehaviour {
 
 		if (LevelLogic.peepsLeft < 1)
 		{
-
+			LevelLogic.peepsLeft = 99;
 			LevelLogic.currentLevel++;
+			Debug.Log (LevelLogic.currentLevel);
 
 			SceneManager.LoadScene (LevelLogic.currentLevel);
 
@@ -60,23 +62,25 @@ public class LevelBehaviour : MonoBehaviour {
 		for(int i = 0 ; i < Peeps.Length; i++)
 		{
 
-			Vector3 peepPosition = Peeps [i].transform.position;
+			if (Peeps [i] != null) {
 
-			for (int j = i + 1; j < Peeps.Length; j++) 
-			{
+				Vector3 peepPosition = Peeps [i].transform.position;
 
-				Debug.Log ("Hi");
-				if (peepPosition == Peeps [j].transform.position)
-				{
+				for (int j = i + 1; j < Peeps.Length; j++) {
+				
+					if (Peeps [j] != null) {
 
-					Peeps [i].GetComponent<PeopleBehaviour> ().MutuallyAssuredDestruction ();
-					Peeps [j].GetComponent<PeopleBehaviour> ().MutuallyAssuredDestruction ();
+						if (peepPosition == Peeps [j].transform.position) {
 
+							Peeps [i].GetComponent<PeopleBehaviour> ().MutuallyAssuredDestruction ();
+							Peeps [j].GetComponent<PeopleBehaviour> ().MutuallyAssuredDestruction ();
+
+						}
+							
+					}
 				}
 
-
 			}
-
 		}
 
 

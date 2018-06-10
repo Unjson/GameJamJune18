@@ -16,6 +16,7 @@ public class PeopleBehaviour : MonoBehaviour {
 	private HexagonBehaviour homeHex;
 	private HexagonBehaviour destHex;
 
+
 	// Use this for initialization
 	void Start () {
 
@@ -159,5 +160,16 @@ public class PeopleBehaviour : MonoBehaviour {
 		SendMessageUpwards ("UpdateStuff");
 
 	}
+
+
+	public void slowDown (){
+
+		if (!isSlowed){
+
+			isSlowed = true;
+		}
+
+	}
+
 
 }

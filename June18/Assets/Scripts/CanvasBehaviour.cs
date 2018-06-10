@@ -8,6 +8,8 @@ public class CanvasBehaviour : MonoBehaviour {
 	public Image arrowA;
 	public Image arrowB;
 	public Image arrowC;
+	public Image arrowD;
+
 
 	public Text peepsText;
 
@@ -59,6 +61,16 @@ public class CanvasBehaviour : MonoBehaviour {
 		}else
 		{
 			arrowC.enabled = false;
+		}
+
+		if (LevelLogic.arrowCount > 3) 
+		{
+
+			arrowD.enabled = true;
+
+		}else
+		{
+			arrowD.enabled = false;
 		}
 
 
