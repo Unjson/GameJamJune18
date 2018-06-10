@@ -51,14 +51,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ButtonStart.cs" />
-     <Compile Include="Assets\CanvasBehaviour.cs" />
-     <Compile Include="Assets\HexagonBehaviour.cs" />
-     <Compile Include="Assets\LevelBehaviour.cs" />
-     <Compile Include="Assets\LevelLogic.cs" />
-     <Compile Include="Assets\PeopleBehaviour.cs" />
-     <Compile Include="Assets\PlayerController.cs" />
-     <Compile Include="Assets\WaterBehaviour.cs" />
+     <Compile Include="Assets\Scripts\ButtonStart.cs" />
+     <Compile Include="Assets\Scripts\CanvasBehaviour.cs" />
+     <Compile Include="Assets\Scripts\HexagonBehaviour.cs" />
+     <Compile Include="Assets\Scripts\LevelBehaviour.cs" />
+     <Compile Include="Assets\Scripts\LevelLogic.cs" />
+     <Compile Include="Assets\Scripts\PeopleBehaviour.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\WaterBehaviour.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

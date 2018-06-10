@@ -1,15 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ButtonStart.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelBehaviour.cs">
     <Files>
-      <File FileName="Assets\HexagonBehaviour.cs" Line="23" Column="4" />
-      <File FileName="Assets\PlayerController.cs" Line="215" Column="37" />
-      <File FileName="Assets\LevelBehaviour.cs" Line="47" Column="1" />
-      <File FileName="Assets\WaterBehaviour.cs" Line="23" Column="35" />
-      <File FileName="Assets\PeopleBehaviour.cs" Line="152" Column="38" />
-      <File FileName="Assets\LevelLogic.cs" Line="9" Column="2" />
-      <File FileName="Assets\CanvasBehaviour.cs" Line="61" Column="10" />
-      <File FileName="Assets\ButtonStart.cs" Line="16" Column="34" />
+      <File FileName="Assets\Scripts\LevelBehaviour.cs" Line="47" Column="1" />
+      <File FileName="Assets\Scripts\CanvasBehaviour.cs" Line="30" Column="3" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="190" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
